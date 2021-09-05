@@ -11,6 +11,6 @@ RegisterCommand("gps", function(source, args)
         SetNewWaypoint(Config.Civici[args[1]].x, Config.Civici[args[1]].y)
         ESX.ShowNotification('Hai impostato il GPS sul civico: '..args[1])
     else
-        ESX.ShowNotification('Questo civico non esiste!')
+        ESX.ShowNotification('Civico non esistente.')
     end
 end)
